@@ -28,11 +28,17 @@ class MainActivity : AppCompatActivity() {
 
     fun onDeleteClicked(view: View) {
         binding.tvEquation.text = binding.tvEquation.text.dropLast(1)
+
+        if (binding.tvEquation.text.isNullOrEmpty()) {
+            binding.tvResult.text = ""
+        } else {
+            evaluate()
+        }
     }
 
     fun onButtonClicked(view: View) {
         if (clearEquation) {
-            onClearClicked(view)
+            binding.tvResult.text = ""
             clearEquation = false
         }
 
@@ -41,6 +47,8 @@ class MainActivity : AppCompatActivity() {
         } else {
             binding.tvEquation.append(view.text)
         }
+
+        evaluate()
     }
 
     fun onEqualClicked(view: View) {
@@ -50,10 +58,23 @@ class MainActivity : AppCompatActivity() {
             expression = ExpressionBuilder(equation).build()
             expression.evaluate().toString()
         } catch (e: Exception){
-            Log.e("TAG", "onEqualClicked: $e", )
+            Log.e("TAG", "onEqualClicked: $e")
             "Error"
         }
 
         clearEquation = true
+        binding.tvEquation.text = ""
+    }
+
+    private fun evaluate() {
+        val equation = binding.tvEquation.text.toString()
+
+        binding.tvResult.text = try {
+            expression = ExpressionBuilder(equation).build()
+            expression.evaluate().toString()
+        } catch (e: Exception){
+            Log.e("TAG", "onEqualClicked: $e")
+            ""
+        }
     }
 }

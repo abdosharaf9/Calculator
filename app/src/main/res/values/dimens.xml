@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="mainTextSize">24sp</dimen>
-    <dimen name="resultTextSize">65sp</dimen>
+    <dimen name="resultTextSize">48sp</dimen>
     <dimen name="equationTextSize">20sp</dimen>
     <dimen name="marginSize">16dp</dimen>
 </resources>
