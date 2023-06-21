@@ -3,5 +3,5 @@
     <dimen name="mainTextSize">24sp</dimen>
     <dimen name="resultTextSize">65sp</dimen>
     <dimen name="equationTextSize">20sp</dimen>
-    <dimen name="marginSize">20dp</dimen>
+    <dimen name="marginSize">16dp</dimen>
 </resources>
