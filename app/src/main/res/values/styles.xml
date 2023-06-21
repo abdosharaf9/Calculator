@@ -12,6 +12,7 @@
         <item name="backgroundTint">#F9FBFF</item>
         <item name="android:elevation">10dp</item>
         <item name="android:textSize">@dimen/mainTextSize</item>
+        <item name="rippleColor">@color/rippleColor</item>
     </style>
 
     <style name="digitButton" parent="button">

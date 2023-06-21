@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="mainColor">#0087F3</color>
+    <color name="rippleColor">#200087F3</color>
     <color name="mainTextColor">#0087F3</color>
     <color name="SecondaryTextColor">#80000000</color>
     <color name="shadow_color">#FFFFFF</color>
