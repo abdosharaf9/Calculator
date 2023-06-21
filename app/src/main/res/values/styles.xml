@@ -2,11 +2,13 @@
 <resources>
 
     <style name="button" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
-        <item name="android:layout_width">77dp</item>
-        <item name="android:layout_height">77dp</item>
-        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_margin">6dp</item>
         <item name="android:fontFamily">@font/sen_regular</item>
         <item name="cornerRadius">20dp</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
         <item name="backgroundTint">#F9FBFF</item>
         <item name="android:elevation">10dp</item>
         <item name="android:textSize">@dimen/mainTextSize</item>
