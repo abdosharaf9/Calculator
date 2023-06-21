@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F9FBFF"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/marginSize" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/marginSize" />
+
+        <View
+            android:id="@+id/darkModeSwitcher"
+            android:layout_width="94dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/sen_regular"
+            android:text="2122"
+            android:textColor="@color/mainTextColor"
+            android:textSize="@dimen/resultTextSize"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/darkModeSwitcher"
+            tools:text="2122" />
+
+        <TextView
+            android:id="@+id/tvEquation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:fontFamily="@font/sen_regular"
+            android:maxLines="1"
+            android:text="346+74*24"
+            android:textColor="@color/SecondaryTextColor"
+            android:textSize="@dimen/equationTextSize"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvResult"
+            tools:text="346+74*24" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:columnCount="4"
+            android:rowCount="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonC"
+                style="@style/buttonStyle"
+                android:text="@string/c"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonOpenBracket"
+                style="@style/buttonStyle"
+                android:text="@string/openBracket"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCloseBracket"
+                style="@style/buttonStyle"
+                android:text="@string/closeBracket"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDivide"
+                style="@style/buttonStyle"
+                android:text="@string/divide"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button7"
+                style="@style/buttonStyle"
+                android:text="@string/_7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button8"
+                style="@style/buttonStyle"
+                android:text="@string/_8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button9"
+                style="@style/buttonStyle"
+                android:text="@string/_9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMultiply"
+                style="@style/buttonStyle"
+                android:text="@string/x"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                style="@style/buttonStyle"
+                android:text="@string/_4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button5"
+                style="@style/buttonStyle"
+                android:text="@string/_5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button6"
+                style="@style/buttonStyle"
+                android:text="@string/_6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubtract"
+                style="@style/buttonStyle"
+                android:text="@string/subtract"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button1"
+                style="@style/buttonStyle"
+                android:text="@string/_1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                style="@style/buttonStyle"
+                android:text="@string/_2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                style="@style/buttonStyle"
+                android:text="@string/_3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAdd"
+                style="@style/buttonStyle"
+                android:text="@string/add"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button0"
+                style="@style/buttonStyle"
+                android:text="@string/_0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDot"
+                style="@style/buttonStyle"
+                android:text="@string/dot" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDelete"
+                style="@style/buttonStyle"
+                android:text="@string/del"
+                android:textAllCaps="false"
+                android:textColor="@color/mainTextColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEqual"
+                style="@style/buttonStyle"
+                android:text="@string/equal"
+                android:textColor="@color/mainTextColor" />
+
+        </GridLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

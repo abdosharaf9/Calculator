@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:fontFamily">@font/sen_regular</item>
+        <item name="android:textSize">@dimen/mainTextSize</item>
+    </style>
+</resources>
