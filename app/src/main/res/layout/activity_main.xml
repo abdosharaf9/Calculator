@@ -31,27 +31,27 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/sen_regular"
-            android:textColor="@color/mainTextColor"
             android:gravity="end"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintBottom_toTopOf="@id/tvEquation"
+            android:textColor="@color/mainTextColor"
             android:textSize="@dimen/resultTextSize"
+            app:layout_constraintBottom_toTopOf="@id/tvEquation"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             tools:text="2122" />
 
         <TextView
             android:id="@+id/tvEquation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/sen_regular"
-            android:textColor="@color/SecondaryTextColor"
-            android:textSize="@dimen/equationTextSize"
             android:gravity="end"
             android:maxLength="120"
-            android:layout_marginBottom="16dp"
+            android:textColor="@color/SecondaryTextColor"
+            android:textSize="@dimen/equationTextSize"
             app:layout_constraintBottom_toTopOf="@id/buttons"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintHorizontal_bias="1.0"
@@ -63,9 +63,9 @@
             android:id="@+id/buttons"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:clipChildren="false"
             android:layout_marginBottom="16dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/guideline2"
@@ -74,8 +74,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:clipToPadding="false"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
@@ -107,8 +107,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:clipToPadding="false"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
@@ -140,8 +140,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:clipToPadding="false"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
@@ -173,8 +173,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:clipToPadding="false"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
@@ -206,8 +206,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:clipToPadding="false"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
@@ -226,10 +226,10 @@
                     android:id="@+id/buttonDel"
                     style="@style/operatorButton"
                     android:contentDescription="@string/del"
+                    android:onClick="onDeleteClicked"
                     app:icon="@drawable/del_icon"
                     app:iconGravity="textStart"
                     app:iconPadding="0dp"
-                    android:onClick="onDeleteClicked"
                     app:iconTint="@color/mainColor" />
 
                 <com.google.android.material.button.MaterialButton
